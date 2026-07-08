@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brand Brew  Brew. Build. Boom.</title>
+<meta name="description" content="Brand Brew is a premium digital marketing and creative agency for startups, founders and SMEs. Digital marketing, social media, design, content, web and Meta Ads — engineered for growth." />
+<link rel="icon" href="assets/logo-crop.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="antialiased">
+
+<div class="fixed inset-0 bg-grid pointer-events-none -z-10"></div>
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-40 backdrop-blur-md bg-[color:var(--bg)]/70 border-b border-[color:var(--border)]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-[76px] flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="assets/logo-crop.png" alt="Brand Brew logo" class="h-10 w-auto object-contain" />
+      <span class="font-semibold text-[17px] tracking-tight leading-none hidden sm:inline">Brand Brew</span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-9 mono text-[12px] uppercase tracking-[0.12em] text-[color:var(--text-dim)]">
+      <a href="index.html" class="hover:text-[color:var(--accent)] transition-all duration-500">Home</a>
+      <a href="#about" class="hover:text-[color:var(--accent)] transition-all duration-500">About</a>
+      <a href="#services" class="hover:text-[color:var(--accent)] transition-all duration-500">Services</a>
+      <a href="#contact" class="hover:text-[color:var(--accent)] transition-all duration-500">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="hidden sm:inline-flex items-center gap-2 bg-[color:var(--accent)] text-[color:var(--accent-ink)] px-4 h-10 text-[12px] font-semibold uppercase tracking-[0.1em] hover:brightness-110 active:scale-[0.97] transition-all duration-500">
+        Book a Free Consultation
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden h-9 w-9 grid place-items-center border border-[color:var(--border)]">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-[color:var(--border)] px-6 py-5 flex flex-col gap-4 mono text-[13px] uppercase tracking-[0.1em] text-[color:var(--text-dim)] bg-[color:var(--bg)]">
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="text-[color:var(--accent)]">Book a Free Consultation</a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="relative overflow-hidden min-h-[92vh] flex items-center">
+  <div class="absolute inset-0 fade-mask bg-grid opacity-60"></div>
+  <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[800px] h-[500px] rounded-full blur-[140px] opacity-20" style="background: radial-gradient(circle, var(--accent), transparent 70%)"></div>
+
+  <!-- Animated network / particle / glass-sphere visual -->
+  <div class="hero-visual hidden lg:block absolute inset-y-0 right-0 w-[62%] pointer-events-none">
+    <svg class="absolute inset-0 w-full h-full" viewBox="0 0 800 900" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="wireGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="var(--accent-deep)"/>
+          <stop offset="50%" stop-color="var(--accent)"/>
+          <stop offset="100%" stop-color="var(--accent-2)"/>
+        </linearGradient>
+        <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+      </defs>
+
+      <circle cx="600" cy="260" r="240" fill="url(#nodeGlow)" filter="url(#softBlur)"/>
+      <circle cx="280" cy="680" r="180" fill="url(#nodeGlow)" filter="url(#softBlur)" opacity="0.5"/>
+
+      <path d="M 120 700 C 300 650, 350 450, 550 420 S 720 250, 680 120" fill="none" stroke="url(#wireGrad)" stroke-width="1.4" stroke-linecap="round" class="wire-flow" opacity="0.55"/>
+      <path d="M 180 300 C 320 380, 420 380, 480 520 S 640 650, 700 700" fill="none" stroke="url(#wireGrad)" stroke-width="1" stroke-linecap="round" class="wire-flow" style="animation-delay:-2.5s" opacity="0.4"/>
+      <path d="M 250 850 C 380 780, 460 700, 560 620 S 640 420, 560 260" fill="none" stroke="url(#wireGrad)" stroke-width="1" stroke-linecap="round" class="wire-flow" style="animation-delay:-5s" opacity="0.45"/>
+      <path d="M 480 520 C 540 470, 600 420, 680 120" fill="none" stroke="url(#wireGrad)" stroke-width="0.75" stroke-linecap="round" class="wire-flow" style="animation-delay:-3.5s" opacity="0.3"/>
+
+      <circle cx="120" cy="700" r="4" fill="var(--accent-2)" class="node-pulse"/>
+      <circle cx="550" cy="420" r="5" fill="var(--accent)" class="node-pulse" style="animation-delay:-1s"/>
+      <circle cx="680" cy="120" r="4" fill="var(--accent-2)" class="node-pulse" style="animation-delay:-2s"/>
+      <circle cx="480" cy="520" r="4" fill="var(--accent)" class="node-pulse" style="animation-delay:-1.5s"/>
+      <circle cx="700" cy="700" r="4" fill="var(--accent-2)" class="node-pulse" style="animation-delay:-2.5s"/>
+      <circle cx="560" cy="260" r="4" fill="var(--accent)" class="node-pulse" style="animation-delay:-0.5s"/>
+      <circle cx="180" cy="300" r="3.5" fill="var(--accent-2)" class="node-pulse" style="animation-delay:-3s"/>
+      <circle cx="250" cy="850" r="3.5" fill="var(--accent)" class="node-pulse" style="animation-delay:-1.8s"/>
+
+      <circle r="3" fill="#f6ecd2" opacity="0.95">
+        <animateMotion dur="6s" repeatCount="indefinite" path="M 120 700 C 300 650, 350 450, 550 420 S 720 250, 680 120"/>
+      </circle>
+      <circle r="2.5" fill="var(--accent-2)" opacity="0.95">
+        <animateMotion dur="7s" begin="-2s" repeatCount="indefinite" path="M 180 300 C 320 380, 420 380, 480 520 S 640 650, 700 700"/>
+      </circle>
+      <circle r="2.5" fill="var(--accent)" opacity="0.95">
+        <animateMotion dur="8s" begin="-4s" repeatCount="indefinite" path="M 250 850 C 380 780, 460 700, 560 620 S 640 420, 560 260"/>
+      </circle>
+    </svg>
+
+    <div class="glass-sphere" style="top:10%; right:20%; width:130px; height:130px; animation-delay:0s;"></div>
+    <div class="glass-sphere" style="top:52%; right:5%; width:86px; height:86px; animation-delay:-3s;"></div>
+    <div class="glass-sphere" style="top:68%; right:34%; width:58px; height:58px; animation-delay:-5.5s;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 lg:px-10 py-20 w-full">
+    <div class="text-center lg:text-left max-w-2xl mx-auto lg:mx-0">
+      <div class="reveal inline-flex items-center gap-2 border border-[color:var(--border)] px-3 py-1.5 mono text-[11px] uppercase tracking-[0.15em] text-[color:var(--text-dim)] mb-8">
+        <span class="h-1.5 w-1.5 rounded-full" style="background: var(--accent)"></span>
+        Premium Digital Marketing &amp; Creative Agency
+      </div>
+
+      <h1 class="reveal font-semibold leading-[1.05] tracking-tight text-[13vw] sm:text-6xl lg:text-[76px]">
+        Brew. Build.<br/>
+        <span class="bg-clip-text text-transparent" style="background-image: linear-gradient(90deg, var(--text), var(--accent) 65%, var(--accent-2))">Boom.</span>
+      </h1>
+
+      <p class="reveal mt-7 text-[17px] leading-[1.6] text-[color:var(--text-dim)] max-w-xl mx-auto lg:mx-0">
+        Creative marketing, stunning design and high-performance digital strategies built for startups, founders and brands ready to scale.
+      </p>
+
+      <div class="reveal mt-10 flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3">
+        <a href="#contact" class="w-full sm:w-auto text-center bg-[color:var(--accent)] text-[color:var(--accent-ink)] px-7 h-12 grid place-items-center text-[13px] font-semibold uppercase tracking-[0.1em] hover:brightness-110 active:scale-[0.98] transition-all duration-500">
+          Book a Free Consultation
+        </a>
+        <a href="#services" class="w-full sm:w-auto text-center border border-[color:var(--border-strong)] px-7 h-12 grid place-items-center text-[13px] font-semibold uppercase tracking-[0.1em] hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] active:scale-[0.98] transition-all duration-500">
+          Explore Services
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="border-t border-[color:var(--border)] bg-[color:var(--surface-2)]">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 py-24 grid lg:grid-cols-2 gap-16">
+    <div class="reveal">
+      <p class="mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">Our Story</p>
+      <h2 class="font-semibold text-3xl sm:text-4xl tracking-tight leading-[1.1] mb-6">Why we call it Brand Brew.</h2>
+      <p class="text-[15px] leading-[1.75] text-[color:var(--text-dim)] mb-5">
+        Brewing takes the right ingredients, patience, and precision  rush it, and it falls flat. That's exactly how we treat brand building. We don't chase quick wins; we combine strategy, design and distribution in the right measure, let it develop, and pour out something that actually holds up under pressure.
+      </p>
+      <p class="text-[15px] leading-[1.75] text-[color:var(--text-dim)]">
+        Our mission is simple: give founders and growing brands the same caliber of marketing that funded, category-leading companies take for granted without the agency bloat or the guesswork.
+      </p>
+    </div>
+    <div class="reveal grid sm:grid-cols-2 gap-px bg-[color:var(--border)] border border-[color:var(--border)]">
+      <div class="bg-[color:var(--surface)] p-7">
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-2">Creativity</p>
+        <p class="text-[14px] leading-relaxed text-[color:var(--text-dim)]">Ideas that stop the scroll and still serve the strategy.</p>
+      </div>
+      <div class="bg-[color:var(--surface)] p-7">
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-2">Strategy</p>
+        <p class="text-[14px] leading-relaxed text-[color:var(--text-dim)]">Every asset ties back to a growth objective, not a trend.</p>
+      </div>
+      <div class="bg-[color:var(--surface)] p-7">
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-2">Transparency</p>
+        <p class="text-[14px] leading-relaxed text-[color:var(--text-dim)]">Clear reporting, honest timelines, no vanity metrics.</p>
+      </div>
+      <div class="bg-[color:var(--surface)] p-7">
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-2">Results</p>
+        <p class="text-[14px] leading-relaxed text-[color:var(--text-dim)]">We measure success in growth %, reach and ROI not hours billed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="border-t border-[color:var(--border)]">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 py-24">
+    <div class="reveal mb-14">
+      <p class="mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">What We Do</p>
+      <h2 class="font-semibold text-3xl sm:text-4xl tracking-tight leading-[1.1]">Seven disciplines.<br/>One growth engine.</h2>
+    </div>
+    <div id="services-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[color:var(--border)] border border-[color:var(--border)]"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="border-t border-[color:var(--border)] bg-[color:var(--surface-2)]">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 py-24 text-center">
+    <p class="reveal mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">What Clients Say</p>
+    <h2 class="reveal font-semibold text-3xl sm:text-4xl tracking-tight leading-[1.1] mb-14">Trusted by founders who've been burned before.</h2>
+
+    <div class="relative overflow-hidden">
+      <div id="testimonial-track" class="flex transition-transform duration-700 ease-out">
+        <div class="w-full flex-shrink-0 px-4">
+          <p class="text-xl sm:text-2xl font-medium leading-[1.5] tracking-tight">"Brand Brew rebuilt our entire Instagram presence in under two months. Our engagement rate has never been higher."</p>
+          <p class="mono text-[12px] uppercase tracking-[0.1em] text-[color:var(--text-faint)] mt-8">Rhea Kapoor — Founder, D2C Food Brand</p>
+        </div>
+        <div class="w-full flex-shrink-0 px-4">
+          <p class="text-xl sm:text-2xl font-medium leading-[1.5] tracking-tight">"We tripled demo requests without touching our product. It was entirely a positioning and distribution fix."</p>
+          <p class="mono text-[12px] uppercase tracking-[0.1em] text-[color:var(--text-faint)] mt-8">Karan Sethi  CEO, Fintech Startup</p>
+        </div>
+        <div class="w-full flex-shrink-0 px-4">
+          <p class="text-xl sm:text-2xl font-medium leading-[1.5] tracking-tight">"Finally an agency that speaks in numbers, not vibes. Our off-season revenue is now our best quarter."</p>
+          <p class="mono text-[12px] uppercase tracking-[0.1em] text-[color:var(--text-faint)] mt-8">Meera Iyer Marketing Lead, Retail Brand</p>
+        </div>
+        <div class="w-full flex-shrink-0 px-4">
+          <p class="text-xl sm:text-2xl font-medium leading-[1.5] tracking-tight">"They operate like an in-house growth team we forgot to hire. Sharp, fast and always on brand."</p>
+          <p class="mono text-[12px] uppercase tracking-[0.1em] text-[color:var(--text-faint)] mt-8">Devansh Rao  Founder, Personal Brand</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center gap-2 mt-10">
+      <button data-dot="0" class="testi-dot h-1.5 w-6 transition-all duration-500" style="background: var(--accent)"></button>
+      <button data-dot="1" class="testi-dot h-1.5 w-6 bg-[color:var(--border-strong)] transition-all duration-500"></button>
+      <button data-dot="2" class="testi-dot h-1.5 w-6 bg-[color:var(--border-strong)] transition-all duration-500"></button>
+      <button data-dot="3" class="testi-dot h-1.5 w-6 bg-[color:var(--border-strong)] transition-all duration-500"></button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="relative overflow-hidden border-t border-[color:var(--border)]">
+  <div class="absolute top-[10%] right-[-10%] w-[500px] h-[500px] rounded-full blur-[160px] opacity-20 pointer-events-none" style="background: radial-gradient(circle, var(--accent), transparent 70%)"></div>
+
+  <div class="relative max-w-6xl mx-auto px-6 lg:px-10 py-24">
+    <div class="reveal text-center max-w-2xl mx-auto mb-16">
+      <p class="mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">Get In Touch</p>
+      <h2 class="font-semibold text-3xl sm:text-4xl tracking-tight leading-[1.15] mb-5">Let's Brew Your Brand Together ☕</h2>
+      <p class="text-[15px] leading-[1.75] text-[color:var(--text-dim)]">Tell us about your goals and we'll craft a growth strategy for you.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
+
+      <!-- Trust + alternate contact paths -->
+      <div class="reveal flex flex-col gap-6">
+        <div class="glass-card p-7 flex flex-col gap-3">
+          <a href="https://wa.me/918867115663?text=Hi%20I%20want%20to%20know%20about%20your%20services" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[color:var(--accent)] text-[color:var(--accent-ink)] h-12 rounded-xl text-[13px] font-semibold uppercase tracking-[0.1em] hover:brightness-110 active:scale-[0.98] transition-all duration-500">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1s1 2.5 1.1 2.6c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.3-.5-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3C3.9 14.7 3.4 13.4 3.4 12c0-4.7 3.9-8.6 8.6-8.6s8.6 3.9 8.6 8.6-3.9 8.6-8.6 8.6z"/></svg>
+            Chat on WhatsApp
+          </a>
+
+          <button id="book-call-btn" type="button" class="inline-flex items-center justify-center gap-2 border border-[color:var(--border-strong)] h-12 rounded-xl text-[13px] font-semibold uppercase tracking-[0.1em] hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] active:scale-[0.98] transition-all duration-500">
+            Book a Free Strategy Call
+          </button>
+          <!--
+            Calendly setup: replace YOUR-CALENDLY-LINK below (in script.js, CALENDLY_URL)
+            with your real scheduling link, e.g. https://calendly.com/your-handle/strategy-call
+          -->
+          <p class="text-center text-[12px] text-[color:var(--text-faint)]">No spam. Just pure growth strategy.</p>
+        </div>
+
+        <p class="reveal text-[13px] text-[color:var(--text-faint)] leading-relaxed px-1">We respond within 24 hours via WhatsApp or call.</p>
+      </div>
+
+      <!-- Contact form -->
+      <div class="reveal glass-card p-7 sm:p-9">
+        <form id="contact-form" class="flex flex-col gap-4">
+          <p class="hidden">
+            <label>Leave this field empty: <input type="text" name="company_website" id="hp-field" autocomplete="off" tabindex="-1" /></label>
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <input type="text" name="name" id="f-name" required placeholder="Full Name" class="w-full bg-transparent border border-[color:var(--border-strong)] rounded-xl px-4 h-12 text-[14px] outline-none placeholder:text-[color:var(--text-faint)]" />
+              <p class="field-error hidden text-[12px] mt-1.5" style="color:#e5484d">Please enter your name.</p>
+            </div>
+            <div>
+              <input type="email" name="email" id="f-email" required placeholder="Email Address" class="w-full bg-transparent border border-[color:var(--border-strong)] rounded-xl px-4 h-12 text-[14px] outline-none placeholder:text-[color:var(--text-faint)]" />
+              <p class="field-error hidden text-[12px] mt-1.5" style="color:#e5484d">Please enter a valid email.</p>
+            </div>
+          </div>
+
+          <input type="tel" name="phone" id="f-phone" placeholder="Phone Number (optional)" class="w-full bg-transparent border border-[color:var(--border-strong)] rounded-xl px-4 h-12 text-[14px] outline-none placeholder:text-[color:var(--text-faint)]" />
+
+          <div>
+            <select name="service" id="f-service" required class="w-full bg-transparent border border-[color:var(--border-strong)] rounded-xl px-4 h-12 text-[14px] outline-none text-[color:var(--text-dim)]">
+              <option class="bg-[color:var(--surface)]" value="">Service Required</option>
+              <option class="bg-[color:var(--surface)]">Digital Marketing</option>
+              <option class="bg-[color:var(--surface)]">Social Media</option>
+              <option class="bg-[color:var(--surface)]">Branding</option>
+              <option class="bg-[color:var(--surface)]">Web Development</option>
+              <option class="bg-[color:var(--surface)]">Meta Ads</option>
+              <option class="bg-[color:var(--surface)]">Content Creation</option>
+            </select>
+            <p class="field-error hidden text-[12px] mt-1.5" style="color:#e5484d">Please select a service.</p>
+          </div>
+
+          <div>
+            <textarea name="message" id="f-message" required rows="4" placeholder="Tell us about your goals" class="w-full bg-transparent border border-[color:var(--border-strong)] rounded-xl px-4 py-3 text-[14px] outline-none placeholder:text-[color:var(--text-faint)] resize-none"></textarea>
+            <p class="field-error hidden text-[12px] mt-1.5" style="color:#e5484d">Please add a short message.</p>
+          </div>
+
+          <button type="submit" id="contact-submit" class="relative inline-flex items-center justify-center gap-2 bg-[color:var(--accent)] text-[color:var(--accent-ink)] h-12 rounded-xl text-[13px] font-semibold uppercase tracking-[0.1em] hover:brightness-110 active:scale-[0.98] transition-all duration-500">
+            <span id="contact-submit-label">Start Your Growth Journey</span>
+            <svg id="contact-spinner" class="hidden animate-spin" width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2.5" opacity="0.25"/><path d="M21 12a9 9 0 00-9-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </button>
+
+          <p id="contact-error" class="hidden text-[13px] text-center" style="color:#e5484d">Something went wrong sending that  please use WhatsApp instead.</p>
+        </form>
+
+        <!-- Success state (shown in place of the form) -->
+        <div id="contact-success" class="hidden flex-col items-center text-center gap-4 py-6">
+          <div class="h-12 w-12 grid place-items-center rounded-full border border-[color:var(--border)]" style="color: var(--accent)">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3 class="font-semibold text-xl tracking-tight">Thanks! Our team will contact you shortly.</h3>
+          <p class="text-[14px] text-[color:var(--text-dim)] max-w-xs">We've saved your details and will follow up within 24 hours.</p>
+          <a id="contact-whatsapp-continue" href="#" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-[color:var(--accent)] text-[color:var(--accent-ink)] px-6 h-11 rounded-xl text-[13px] font-semibold uppercase tracking-[0.1em] hover:brightness-110 active:scale-[0.98] transition-all duration-500">
+            Continue on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-[color:var(--border)]">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 py-14">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div class="lg:col-span-2">
+        <img src="assets/logo-crop.png" alt="Brand Brew logo" class="h-10 w-auto object-contain mb-4" />
+        <p class="text-[13px] text-[color:var(--text-dim)] leading-relaxed max-w-xs">A premium digital marketing and creative agency for startups, founders and growing brands.</p>
+        <div class="flex items-center gap-3 mt-5">
+          <a href="https://www.instagram.com/brand_brew_?igsh=d2wyaHYydmkwN2p4&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="h-8 w-8 grid place-items-center border border-[color:var(--border)] hover:border-[color:var(--accent)] hover:text-[color:var(--accent)] transition-all duration-500">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-4">Quick Links</p>
+        <ul class="flex flex-col gap-2.5 text-[13px] text-[color:var(--text-dim)]">
+          <li><a href="#about" class="hover:text-[color:var(--accent)] transition-all duration-500">About</a></li>
+          <li><a href="#services" class="hover:text-[color:var(--accent)] transition-all duration-500">Services</a></li>
+          <li><a href="#contact" class="hover:text-[color:var(--accent)] transition-all duration-500">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-4">Services</p>
+        <ul class="flex flex-col gap-2.5 text-[13px] text-[color:var(--text-dim)]">
+          <li><a href="services/digital-marketing.html" class="hover:text-[color:var(--accent)] transition-all duration-500">Digital Marketing</a></li>
+          <li><a href="services/web-development.html" class="hover:text-[color:var(--accent)] transition-all duration-500">Web Development</a></li>
+          <li><a href="services/meta-ads.html" class="hover:text-[color:var(--accent)] transition-all duration-500">Meta Ads</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-4">Contact</p>
+        <ul class="flex flex-col gap-2.5 text-[13px] text-[color:var(--text-dim)]">
+          <li>Vijayapura, Karnataka, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-14 pt-8 border-t border-[color:var(--border)]">
+      <p class="mono text-[11px] text-[color:var(--text-faint)]">© 2026 Brand Brew. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const services = [
+  { name:"Digital Marketing", slug:"digital-marketing", desc:"Full-funnel strategy across paid, organic and lifecycle channels to compound growth month over month.", icon:'<path d="M3 11l18-7-7 18-2-8-9-3z"/>' },
+  { name:"Social Media Management", slug:"social-media-management", desc:"Editorial calendars, community management and organic growth loops that keep your brand top of feed.", icon:'<circle cx="9" cy="7" r="3"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/><circle cx="17" cy="8" r="2.2"/>' },
+  { name:"Graphic Design", slug:"graphic-design", desc:"Scroll-stopping visuals — social creatives, festival posts and brand assets — built to convert.", icon:'<rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="8" y="13" width="8" height="8" rx="1"/>' },
+  { name:"Content Creation", slug:"content-creation", desc:"Video, photo and copy production that gives every channel something worth sharing.", icon:'<rect x="2" y="5" width="14" height="14" rx="1"/><path d="M16 9l6-3v12l-6-3"/>' },
+  { name:"Web Development", slug:"web-development", desc:"Fast, conversion-first websites and landing pages built by certified developers.", icon:'<path d="M8 4L2 12l6 8M16 4l6 8-6 8"/>' },
+  { name:"Branding & Identity", slug:"branding-identity", desc:"Naming, visual identity and brand systems that make your business instantly recognizable.", icon:'<path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/>' },
+  { name:"Meta Ads", slug:"meta-ads", desc:"Certified Meta campaigns engineered for ROAS, not just reach.", icon:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/>' },
+];
+
+const servicesGrid = document.getElementById('services-grid');
+services.forEach((s, i) => {
+  const el = document.createElement('div');
+  el.className = "reveal bg-[color:var(--surface)] p-7 glow-hover flex flex-col";
+  el.innerHTML = `
+    <div class="h-10 w-10 grid place-items-center border border-[color:var(--border)] mb-5" style="color: var(--accent)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${s.icon}</svg>
+    </div>
+    <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-3">0${i+1}</p>
+    <h3 class="font-semibold text-[16px] leading-snug mb-3">${s.name}</h3>
+    <p class="text-[13px] text-[color:var(--text-dim)] leading-relaxed mb-6">${s.desc}</p>
+    <a href="services/${s.slug}.html" class="mt-auto text-[12px] font-semibold uppercase tracking-[0.1em]" style="color: var(--accent)">Learn More →</a>
+  `;
+  servicesGrid.appendChild(el);
+});
+</script>
+<script src="script.js"></script>
+</body>
+</html>

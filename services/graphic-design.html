@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Graphic Design — Brand Brew</title>
+<meta name="description" content="From festival creatives to ad variations, our design studio produces visuals that hold attention in a crowded feed while staying unmistakably on-brand" />
+<link rel="icon" href="../assets/logo-crop.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+<body class="antialiased">
+
+<div class="fixed inset-0 bg-grid pointer-events-none -z-10"></div>
+
+<header class="sticky top-0 z-40 backdrop-blur-md bg-[color:var(--bg)]/70 border-b border-[color:var(--border)]">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-[76px] flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-3 group">
+      <img src="../assets/logo-crop.png" alt="Brand Brew logo" class="h-10 w-auto object-contain" />
+      <span class="font-semibold text-[17px] tracking-tight leading-none hidden sm:inline">Brand Brew</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-9 mono text-[12px] uppercase tracking-[0.12em] text-[color:var(--text-dim)]">
+      <a href="../index.html#top" class="hover:text-[color:var(--accent)] transition-all duration-500">Home</a>
+<a href="../index.html#about" class="hover:text-[color:var(--accent)] transition-all duration-500">About</a>
+<a href="../index.html#services" class="hover:text-[color:var(--accent)] transition-all duration-500">Services</a>
+<a href="../index.html#contact" class="hover:text-[color:var(--accent)] transition-all duration-500">Contact</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="../index.html#contact" class="hidden sm:inline-flex items-center gap-2 bg-[color:var(--accent)] text-[color:var(--accent-ink)] px-4 h-10 text-[12px] font-semibold uppercase tracking-[0.1em] hover:brightness-110 active:scale-[0.97] transition-all duration-500">
+        Book a Free Consultation
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden h-9 w-9 grid place-items-center border border-[color:var(--border)]">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-[color:var(--border)] px-6 py-5 flex flex-col gap-4 mono text-[13px] uppercase tracking-[0.1em] text-[color:var(--text-dim)] bg-[color:var(--bg)]">
+    <a href="../index.html#top" class="hover:text-[color:var(--accent)] transition-all duration-500">Home</a>
+<a href="../index.html#about" class="hover:text-[color:var(--accent)] transition-all duration-500">About</a>
+<a href="../index.html#services" class="hover:text-[color:var(--accent)] transition-all duration-500">Services</a>
+<a href="../index.html#contact" class="hover:text-[color:var(--accent)] transition-all duration-500">Contact</a>
+    <a href="../index.html#contact" style="color: var(--accent)">Book a Free Consultation</a>
+  </div>
+</header>
+
+<main>
+<section class="relative overflow-hidden border-b border-[color:var(--border)]">
+  <div class="absolute inset-0 fade-mask bg-grid opacity-60"></div>
+  <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[700px] h-[420px] rounded-full blur-[140px] opacity-20" style="background: radial-gradient(circle, var(--accent), transparent 70%)"></div>
+  <div class="relative max-w-4xl mx-auto px-6 lg:px-10 pt-20 pb-16">
+    <a href="../index.html#services" class="reveal in inline-flex items-center gap-2 text-[12px] mono uppercase tracking-[0.1em] text-[color:var(--text-faint)] hover:text-[color:var(--accent)] transition-all duration-500 mb-8">&larr; All Services</a>
+    <div class="reveal in flex items-center gap-4 mb-6">
+      <div class="h-12 w-12 grid place-items-center border border-[color:var(--border)]" style="color: var(--accent)">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="8" y="13" width="8" height="8" rx="1"/></svg>
+      </div>
+      <p class="mono text-[11px] uppercase tracking-[0.15em]" style="color: var(--accent)">Visual Craft</p>
+    </div>
+    <h1 class="reveal in font-semibold text-4xl sm:text-5xl tracking-tight leading-[1.05] mb-6">Graphic Design</h1>
+    <p class="reveal in text-[16px] leading-[1.75] text-[color:var(--text-dim)] max-w-2xl">From festival creatives to ad variations, our design studio produces visuals that hold attention in a crowded feed while staying unmistakably on-brand, every single time.</p>
+  </div>
+</section>
+
+<section class="border-b border-[color:var(--border)] bg-[color:var(--surface-2)]">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 py-20">
+    <p class="reveal mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">Benefits</p>
+    <h2 class="reveal font-semibold text-2xl sm:text-3xl tracking-tight leading-[1.15] mb-10">What you get</h2>
+    <div class="reveal grid sm:grid-cols-2 gap-px bg-[color:var(--border)] border border-[color:var(--border)]">
+      <div class="bg-[color:var(--surface)] p-6 flex gap-3">
+          <span class="mono text-[11px] mt-0.5" style="color: var(--accent)">&#10003;</span>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">On-brand visuals across every platform and format</p>
+        </div>
+<div class="bg-[color:var(--surface)] p-6 flex gap-3">
+          <span class="mono text-[11px] mt-0.5" style="color: var(--accent)">&#10003;</span>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">Faster turnaround on campaign creative</p>
+        </div>
+<div class="bg-[color:var(--surface)] p-6 flex gap-3">
+          <span class="mono text-[11px] mt-0.5" style="color: var(--accent)">&#10003;</span>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">A real design system, not one-off graphics</p>
+        </div>
+<div class="bg-[color:var(--surface)] p-6 flex gap-3">
+          <span class="mono text-[11px] mt-0.5" style="color: var(--accent)">&#10003;</span>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">Higher scroll-stop and engagement rates</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="border-b border-[color:var(--border)]">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 py-20">
+    <p class="reveal mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">Process</p>
+    <h2 class="reveal font-semibold text-2xl sm:text-3xl tracking-tight leading-[1.15] mb-10">How we work</h2>
+    <div class="reveal grid sm:grid-cols-2 gap-px bg-[color:var(--border)] border border-[color:var(--border)]">
+      <div class="bg-[color:var(--surface)] p-7">
+          <p class="mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">01</p>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">Brief intake and mood boarding</p>
+        </div>
+<div class="bg-[color:var(--surface)] p-7">
+          <p class="mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">02</p>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">Concept design and initial drafts</p>
+        </div>
+<div class="bg-[color:var(--surface)] p-7">
+          <p class="mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">03</p>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">Structured revisions and refinement</p>
+        </div>
+<div class="bg-[color:var(--surface)] p-7">
+          <p class="mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">04</p>
+          <p class="text-[14px] text-[color:var(--text-dim)] leading-relaxed">Final delivery across all required formats</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="border-b border-[color:var(--border)] bg-[color:var(--surface-2)]">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 py-20">
+    <p class="reveal mono text-[11px] uppercase tracking-[0.15em] mb-3" style="color: var(--accent)">Tools We Use</p>
+    <h2 class="reveal font-semibold text-2xl sm:text-3xl tracking-tight leading-[1.15] mb-8">Built on proven platforms</h2>
+    <div class="reveal flex flex-wrap gap-2">
+      <span class="text-[12px] border border-[color:var(--border)] px-3 py-1.5 text-[color:var(--text-dim)]">Figma</span>
+<span class="text-[12px] border border-[color:var(--border)] px-3 py-1.5 text-[color:var(--text-dim)]">Adobe Illustrator</span>
+<span class="text-[12px] border border-[color:var(--border)] px-3 py-1.5 text-[color:var(--text-dim)]">Photoshop</span>
+<span class="text-[12px] border border-[color:var(--border)] px-3 py-1.5 text-[color:var(--text-dim)]">Canva</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 py-20 text-center">
+    <h2 class="reveal font-semibold text-3xl sm:text-4xl tracking-tight leading-[1.1] mb-5">Ready to brew this into your brand?</h2>
+    <p class="reveal text-[15px] text-[color:var(--text-dim)] mb-9 max-w-lg mx-auto">Book a free consultation and we'll map out exactly how graphic design fits your growth plan.</p>
+    <a href="../index.html#contact" class="reveal inline-flex items-center justify-center bg-[color:var(--accent)] text-[color:var(--accent-ink)] px-8 h-12 text-[13px] font-semibold uppercase tracking-[0.1em] hover:brightness-110 active:scale-[0.98] transition-all duration-500">Book Consultation</a>
+
+    <div class="reveal flex items-center justify-between mt-20 pt-8 border-t border-[color:var(--border)] text-left gap-4">
+      <a href="social-media-management.html" class="text-[13px] text-[color:var(--text-dim)] hover:text-[color:var(--accent)] transition-all duration-500">&larr; Previous Service</a>
+      <a href="content-creation.html" class="text-[13px] text-[color:var(--text-dim)] hover:text-[color:var(--accent)] transition-all duration-500">Next Service &rarr;</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="border-t border-[color:var(--border)]">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 py-14">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div class="lg:col-span-2">
+        <img src="../assets/logo-crop.png" alt="Brand Brew logo" class="h-10 w-auto object-contain mb-4" />
+        <p class="text-[13px] text-[color:var(--text-dim)] leading-relaxed max-w-xs">A premium digital marketing and creative agency for startups, founders and growing brands.</p>
+      </div>
+      <div>
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-4">Quick Links</p>
+        <ul class="flex flex-col gap-2.5 text-[13px] text-[color:var(--text-dim)]">
+          <li><a href="../index.html#about" class="hover:text-[color:var(--accent)] transition-all duration-500">About</a></li>
+          <li><a href="../index.html#services" class="hover:text-[color:var(--accent)] transition-all duration-500">Services</a></li>
+          <li><a href="../index.html#contact" class="hover:text-[color:var(--accent)] transition-all duration-500">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-4">Services</p>
+        <ul class="flex flex-col gap-2.5 text-[13px] text-[color:var(--text-dim)]">
+          <li><a href="digital-marketing.html" class="hover:text-[color:var(--accent)] transition-all duration-500">Digital Marketing</a></li>
+          <li><a href="web-development.html" class="hover:text-[color:var(--accent)] transition-all duration-500">Web Development</a></li>
+          <li><a href="meta-ads.html" class="hover:text-[color:var(--accent)] transition-all duration-500">Meta Ads</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mono text-[10px] uppercase tracking-[0.15em] text-[color:var(--text-faint)] mb-4">Contact</p>
+        <ul class="flex flex-col gap-2.5 text-[13px] text-[color:var(--text-dim)]">
+          <li>Vijayapura, Karnataka, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mt-14 pt-8 border-t border-[color:var(--border)]">
+      <p class="mono text-[11px] text-[color:var(--text-faint)]">&copy; 2026 Brand Brew. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
