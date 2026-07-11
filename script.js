@@ -75,10 +75,18 @@ if(filterBtns.length){
 }
 
 // ---------- Contact system: config ----------
-// Replace with your deployed backend URL, e.g. "https://brand-brew-api.onrender.com/api/contact"
+// ⚠️ REQUIRED: set this to your deployed backend URL before the form can work,
+// e.g. "https://brand-brew-api.onrender.com/api/contact" (see /server/README.md)
 const CONTACT_API_URL = "https://YOUR-BACKEND-URL/api/contact";
-// Replace with your real Calendly scheduling link
+const CONTACT_API_CONFIGURED = !CONTACT_API_URL.includes('YOUR-BACKEND-URL');
+
+// ⚠️ REQUIRED: replace with your real Calendly scheduling link
 const CALENDLY_URL = "https://calendly.com/YOUR-HANDLE/strategy-call";
+// Popup is used by default (see bookCallBtn handler below). To embed the
+// calendar directly on the page instead, replace the "Book a Call" button's
+// container in index.html with Calendly's inline widget div, e.g.:
+//   <div class="calendly-inline-widget" data-url="YOUR_CALENDLY_URL" style="min-width:320px;height:630px;"></div>
+// (the widget.js script is already loaded in index.html's <head>)
 
 // ---------- Contact form: validation + submit ----------
 const contactForm = document.getElementById('contact-form');
@@ -94,7 +102,6 @@ if(contactForm){
   const spinner = document.getElementById('contact-spinner');
   const errorEl = document.getElementById('contact-error');
   const successEl = document.getElementById('contact-success');
-  const whatsappContinue = document.getElementById('contact-whatsapp-continue');
 
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -128,6 +135,14 @@ if(contactForm){
 
     if(!validate()) return;
 
+    // Backend not connected yet — don't attempt a fetch that's guaranteed to fail.
+    // Set CONTACT_API_URL above once your /server is deployed (see README).
+    if(!CONTACT_API_CONFIGURED){
+      errorEl.textContent = 'Our online form is finishing setup — please DM us on Instagram instead, we reply fast!';
+      errorEl.classList.remove('hidden');
+      return;
+    }
+
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
     submitLabel.textContent = 'Sending…';
@@ -154,11 +169,9 @@ if(contactForm){
         contactForm.classList.add('hidden');
         successEl.classList.remove('hidden');
         successEl.classList.add('flex');
-
-        const waText = `Hi, I just submitted a request on your website. I'm interested in ${payload.service}.`;
-        whatsappContinue.href = `https://wa.me/918867115663?text=${encodeURIComponent(waText)}`;
       })
       .catch(() => {
+        errorEl.textContent = 'Something went wrong sending that — please DM us on Instagram instead.';
         errorEl.classList.remove('hidden');
         submitBtn.disabled = false;
         submitBtn.style.opacity = '1';
@@ -168,7 +181,7 @@ if(contactForm){
   });
 }
 
-// ---------- Book a Free Strategy Call: Calendly popup ----------
+// ---------- Book a Call: Calendly popup ----------
 const bookCallBtn = document.getElementById('book-call-btn');
 if(bookCallBtn){
   bookCallBtn.addEventListener('click', ()=>{
@@ -179,3 +192,4 @@ if(bookCallBtn){
     }
   });
 }
+
