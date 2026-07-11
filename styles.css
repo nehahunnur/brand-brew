@@ -97,3 +97,19 @@ input:focus, textarea:focus, select:focus{ border-color: var(--accent); }
   border-radius: 1.25rem;
   box-shadow: 0 20px 60px -20px rgba(0,0,0,0.6), 0 0 40px -18px var(--glow);
 }
+
+/* Animated gradient CTA (Instagram DM button) */
+.gradient-btn{
+  background: linear-gradient(120deg, var(--accent-deep), var(--accent), var(--accent-2), var(--accent));
+  background-size: 300% 300%;
+  animation: gradientShift 6s ease infinite;
+  box-shadow: 0 0 30px -8px var(--glow);
+}
+.gradient-btn:hover{ filter: brightness(1.1); }
+@keyframes gradientShift{
+  0%{ background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{ background-position: 0% 50%; }
+}
+
+ 
